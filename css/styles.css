@@ -1,0 +1,127 @@
+/* основной цвет фона - #FFFFFF
+вторичный цвет фона - #F5F4FA
+цвет заголовков - #212121
+цвет текста - #757575
+цвет акцента, ховера фокуса - #2196F3
+
+цвета лого - #2196F3  #000000 #FFFFFF
+цвет тел и емейл в футере - rgba(255, 255, 255, 0.6) 
+бекграунд цвет футера и заглушки героя - #2F303A */
+
+:root {
+	--title-color: #212121;
+	--text-color: #757575;
+	--active-hover-focus-current: #2196f3;
+}
+
+.logo-header {
+	color: #000000;
+}
+
+.logo-web {
+	color: #2196f3;
+}
+
+.nav,
+.nav-contacts,
+.feature-list,
+.project-list,
+.member-list,
+.portfolio,
+.projects {
+	list-style: none;
+}
+
+/*Оформление навигации */
+
+/*.nav-link.current-studio,
+.nav-link.current-portfolio {
+	color: var(--active-hover-focus-current);}*/
+
+[aria-current] {
+	color: var(--active-hover-focus-current);
+}
+
+.nav-link,
+.nav-tel,
+.nav-mail {
+	color: var(--title-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-tel:hover,
+.nav-mail:hover {
+	color: var(--active-hover-focus-current);
+}
+
+.hero-dummy {
+	background-color: #2f303a;
+}
+
+.hero-title {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.btn {
+	color: #ffffff;
+	background-color: #2196f3;
+}
+
+.features {
+	color: var(--title-color);
+}
+
+.features-text {
+	color: var(--text-color);
+}
+
+.work {
+	color: var(--title-color);
+}
+
+.members {
+	color: var(--title-color);
+}
+
+.member {
+	color: var(--title-color);
+}
+.member-position {
+	color: var(--text-color);
+}
+
+.address {
+	color: #ffffff;
+}
+
+.project-title {
+	color: var(--title-color);
+}
+
+.project-type {
+	color: var(--text-color);
+}
+
+.portfolio-menu {
+	color: var(--title-color);
+	background-color: #f5f4fa;
+}
+
+.portfolio-menu:hover,
+.portfolio-menu:focus {
+	color: #ffffff;
+	background-color: #2196f3;
+}
+
+.logo-footer {
+	color: #ffffff;
+}
+
+.footer-contacts {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+	background-color: #2f303a;
+}
