@@ -15,6 +15,7 @@
 }
 
 body {
+	background-color: #ffffff;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -24,6 +25,7 @@ button {
 .logo-header {
 	color: #000000;
 	font-family: "Raleway", sans-serif;
+	text-decoration: none;
 }
 
 .logo-web {
@@ -36,7 +38,7 @@ button {
 .project-list,
 .member-list,
 .portfolio,
-.projects {
+.project {
 	list-style: none;
 }
 
@@ -44,6 +46,7 @@ button {
 .nav-tel,
 .nav-mail {
 	color: var(--title-color);
+	text-decoration: none;
 }
 
 .nav-link:hover,
@@ -97,6 +100,10 @@ button {
 	color: #ffffff;
 }
 
+.project-link {
+	text-decoration: none;
+}
+
 .project-title {
 	color: var(--title-color);
 }
@@ -119,6 +126,7 @@ button {
 .logo-footer {
 	color: #ffffff;
 	font-family: "Raleway", sans-serif;
+	text-decoration: none;
 }
 
 .footer-contacts {
