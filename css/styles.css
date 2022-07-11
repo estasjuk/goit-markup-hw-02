@@ -14,8 +14,16 @@
 	--active-hover-focus-current: #2196f3;
 }
 
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+button {
+	font-family: inherit;
+}
 .logo-header {
 	color: #000000;
+	font-family: "Raleway", sans-serif;
 }
 
 .logo-web {
@@ -32,16 +40,6 @@
 	list-style: none;
 }
 
-/*Оформление навигации */
-
-/*.nav-link.current-studio,
-.nav-link.current-portfolio {
-	color: var(--active-hover-focus-current);}*/
-
-[aria-current] {
-	color: var(--active-hover-focus-current);
-}
-
 .nav-link,
 .nav-tel,
 .nav-mail {
@@ -52,6 +50,10 @@
 .nav-link:focus,
 .nav-tel:hover,
 .nav-mail:hover {
+	color: var(--active-hover-focus-current);
+}
+
+[aria-current] {
 	color: var(--active-hover-focus-current);
 }
 
@@ -103,19 +105,20 @@
 	color: var(--text-color);
 }
 
-.portfolio-menu {
+.portfolio-btn {
 	color: var(--title-color);
 	background-color: #f5f4fa;
 }
 
-.portfolio-menu:hover,
-.portfolio-menu:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
 	color: #ffffff;
 	background-color: #2196f3;
 }
 
 .logo-footer {
 	color: #ffffff;
+	font-family: "Raleway", sans-serif;
 }
 
 .footer-contacts {
