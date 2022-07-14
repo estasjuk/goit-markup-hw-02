@@ -3,136 +3,248 @@
 цвет заголовков - #212121
 цвет текста - #757575
 цвет акцента, ховера фокуса - #2196F3
+ховер кнопки "заказать услугу" - #188ce8
 
 цвета лого - #2196F3  #000000 #FFFFFF
 цвет тел и емейл в футере - rgba(255, 255, 255, 0.6) 
 бекграунд цвет футера и заглушки героя - #2F303A */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 :root {
-	--title-color: #212121;
-	--text-color: #757575;
-	--active-hover-focus-current: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --active-hover-focus-current: #2196f3;
 }
 
 body {
-	background-color: #ffffff;
-	font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
 button {
-	font-family: inherit;
+  font-family: inherit;
 }
+.logo {
+  color: var(--active-hover-focus-current);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 .logo-header {
-	color: #000000;
-	font-family: "Raleway", sans-serif;
-	text-decoration: none;
+  color: #000000;
 }
 
-.logo-web {
-	color: #2196f3;
+.logo-footer {
+  color: #ffffff;
 }
 
-.nav,
-.nav-contacts,
-.feature-list,
-.project-list,
-.member-list,
-.portfolio,
-.project {
-	list-style: none;
+.list-item {
+  list-style: none;
 }
 
-.nav-link,
+.nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .nav-tel,
 .nav-mail {
-	color: var(--title-color);
-	text-decoration: none;
+  text-decoration: none;
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-color);
+  text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-tel:hover,
 .nav-mail:hover {
-	color: var(--active-hover-focus-current);
+  color: var(--active-hover-focus-current);
 }
 
 [aria-current] {
-	color: var(--active-hover-focus-current);
+  color: var(--active-hover-focus-current);
 }
 
 .hero-dummy {
-	background-color: #2f303a;
+  background-color: #2f303a;
 }
 
 .hero-title {
-	color: #ffffff;
-	text-transform: uppercase;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .btn {
-	color: #ffffff;
-	background-color: #2196f3;
+  color: #ffffff;
+  background-color: var(--active-hover-focus-current);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.btn:hover {
+  background-color: #188ce8;
 }
 
 .features {
-	color: var(--title-color);
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .features-text {
-	color: var(--text-color);
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .work {
-	color: var(--title-color);
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .members {
-	color: var(--title-color);
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .member {
-	color: var(--title-color);
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .member-position {
-	color: var(--text-color);
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .address {
-	color: #ffffff;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .project-link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .project-title {
-	color: var(--title-color);
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .project-type {
-	color: var(--text-color);
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-btn {
-	color: var(--title-color);
-	background-color: #f5f4fa;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-	color: #ffffff;
-	background-color: #2196f3;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .logo-footer {
-	color: #ffffff;
-	font-family: "Raleway", sans-serif;
-	text-decoration: none;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }
 
 .footer-contacts {
-	color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer {
-	background-color: #2f303a;
+  background-color: #2f303a;
 }
