@@ -163,7 +163,7 @@ body {
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -184,9 +184,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.footer-contacts {
+  font-style: normal;
+}
+
 .footer-tel,
 .footer-mail {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -195,7 +198,6 @@ body {
 }
 
 .footer-address {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -232,6 +234,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+.current-button {
+  background-color: var(--active-hover-focus-current);
+  color: #ffffff;
 }
 
 .portfolio-btn:hover,
